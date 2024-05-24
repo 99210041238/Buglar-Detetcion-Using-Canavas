@@ -1,0 +1,21 @@
+<html>
+<body>
+
+<div><h1>Burglary activity detector camera</h1>
+<div><p>Recognise Movement</p>
+
+<p id="output"></p>
+
+<div>
+    <button type="button" onclick="init()">Start</button>
+    <button id="stopBtn" style="display:none;" onclick="stopVideo()">Stop</button>
+</div>
+
+<canvas id="canvas"></canvas>
+
+<div id="label-container"></div>
+
+<div id="activityBtns" style="display:none;">
+    <button onclick="setActivity('Suspicious')">Suspicious activity detected</button>
+    <button onclick="setActivity('Normal')">Normal activity</button>
+</div>
